@@ -18,6 +18,13 @@ matrix:
             - libboost-program-options-dev
     - os: osx
       compiler: clang
+deploy:
+  provider: releases
+  api_key: "b3ed4a47383d25e9680bc39dd3b78611fef12a0d"
+  file: "test"
+  skip_cleanup: true
+  on:
+    tags: true
 
 
 
